@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
-    "target": "ES6",
+    "target": "ES2015",
     "lib": ["ESNext", "dom"],
+    "module": "CommonJS",
     "strict": true,
     "outDir": "./dist",
     "moduleResolution": "Node"
