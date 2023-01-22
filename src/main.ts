@@ -36,8 +36,6 @@ bot.on("messageCreate", async (message) => {
   const joinedContent = messageContentsWithSingleSpace.join(" ");
   const prompt = `Respond to this as if you were "Walter White" from the show "Breaking Bad": "${joinedContent}"`;
 
-  console.log(prompt);
-
   await message.channel.sendTyping();
 
   try {
@@ -55,8 +53,6 @@ bot.on("messageCreate", async (message) => {
         timeout: 10000,
       }
     );
-
-    console.log(completion.data.choices);
 
     const response = completion.data.choices[0].text;
 
