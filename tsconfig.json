@@ -3,7 +3,8 @@
     "target": "ES6",
     "lib": ["ESNext", "dom"],
     "strict": true,
-    "outDir": "./dist"
+    "outDir": "./dist",
+    "moduleResolution": "Node"
   },
-  "include": ["./src/**/*.ts"]
+  "include": ["./src/*.ts"]
 }
